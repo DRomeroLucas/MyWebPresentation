@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mi sitio web presentación">
+    <title>DR Web Dev</title>
+    <!-- <link rel="prefetch" href="">  COMENTAR AL FINAL-->
+    <link rel="shortcut icon" href="build/img/icono.png">
+    <link rel="preload" href="build/css/app.css" as="style">
+    <link rel="stylesheet" href="build/css/app.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&family=Josefin+Sans:ital,wght@1,400;1,700&family=Quicksand&family=Rubik:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="contenedor">
+            <div class="barra barra_de_navegacion">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto texto-borde">DR<span class="logo__bold">Web
+                            Dev</span></h1>
+                </a>
+
+                <nav class="navegacion upper">
+                    <a href="sobre_mi.html" class="navegacion__enlace">Sobre Mi</a>
+                    <a href="#" class="navegacion__enlace">Mis proyectos y educación</a>
+                    <a href="#" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Presentación -->
+    <main class="contenedor-proyectos">
+        <p class="descripcion-proyectos">Estos son algunos de mis prioyectos realizados además de la presente página
+            web, estos proyectos se
+            concentran en ser páginas responsive y empleando diferentes herramientas:</p>
+        <section class="proyectos">
+            <div>
+                <a href="https://pokedexmuestra.netlify.app/" target="_blank"><img class="ssProyecto"
+                        src="./build/img/PokedexReact.png" alt="Proyecto Pokedex con REACT"></a>
+                <p>Este es un pequeño proyecto realizado en base a REACT y Typescript en la cual se realiza solicitud
+                    de datos a la PokeApi la cual es una API RESTful sobre información de Pokémon, para ello se usa el
+                    método 'fetch' para relizar solicitud HTTP GET a la API y obtener los resultados.</p>
+            </div>
+            <div>
+                <a href="https://proy-festmusic.netlify.app" target="_blank"><img class="ssProyecto"
+                        src="./build/img/FestMusicaLogo.png" alt="Proyecto Festival de Música"></a>
+                <p>Una web en la cual se pone en práctica el uso de funciones de JavaScript como lo es fijar un header,
+                    generar una galería de imagenes, así como Smooth scroll según la sección de la navegación a la que
+                    se da click, además de ello se emplea npm y la herramienta de automaticación de flujo Gulp, mientras
+                    que los estilos se realizan con SASS</p>
+            </div>
+            <div>
+                <div class="contenedor-cargando">
+                    <div class="cargando">
+                        <div class="ball"></div>
+                        <div class="ball"></div>
+                        <div class="ball"></div>
+                        <span class="text-cargando">Cargando...</span>
+                    </div>
+                </div>
+                <p>Seguiré actualizando conforme más proyectos sean cargados, sientete libre de mirar estos proyectos
+                    desde mi cuenta de GitHub</p>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Botón ir hacia arriba -->
+    <button class="scrollTop hide">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up" width="80" height="80"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <line x1="18" y1="11" x2="12" y2="5" />
+            <line x1="6" y1="11" x2="12" y2="5" />
+        </svg>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto texto-borde">DR <span class="logo__bold">Web
+                            Dev</span></h1>
+                </a>
+                <p>Derechos reservados David Romero 2023</p>
+            </div>
+
+        </div>
+    </footer>
+    <script src="build/js/app.js"></script>
+</body>
+
+</html>
